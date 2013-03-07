@@ -1,0 +1,265 @@
+/*
+Theme Name: MilkVille
+Theme URI: http://milkville.co.uk
+Description: Theme for MilkVille created by Alex Fuller.
+Author: Alex Fuller
+Author URI: http://alexfuller.co.uk
+Version: 1.0
+Tags: milkville, alex fuller
+*/
+
+@font-face {
+	font-family: Pacifico;
+	src: url('pacifico.ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url(images/bg.png) repeat fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #16181a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Pacifico;
+	font-size: 38px;
+	margin: -15px 0 -10px -7px;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0 0 15px 0;
+}
+
+a {
+	color: #16181a;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #16181a;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+#logo {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	opacity: 0.5;
+	transition: opacity .5s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+}
+
+#logo:hover {
+	opacity: 1;
+}
+
+#container {
+	width: 540px;
+	margin: 20px auto;
+	display: block;
+}
+
+#container #posthold {
+	width: 520px;
+	margin: 0 0 20px 0;
+	padding: 10px;
+	background-color: #ffffff;
+	position: relative;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #bdbdbd;
+	-webkit-box-shadow: 0px 0px 5px #bdbdbd;
+	-moz-box-shadow: 0px 0px 5px #bdbdbd;
+	-o-box-shadow: 0px 0px 5px #bdbdbd;
+}
+
+#container #posthold:last-child {
+	margin: 0;
+}
+
+#container #posthold .thumb {
+	width: 520px;
+	height: 150px;
+	position: relative;
+}
+
+#container #posthold .white {
+	width: 520px;
+	height: 150px;
+	background-color: rgba(240, 240, 250, 0.5);
+	position: absolute;
+	z-index: 2;
+	transition: background-color .3s ease-in-out;
+	-webkit-transition: background-color .3s ease-in-out;
+	-moz-transition: background-color .3s ease-in-out;
+	-o-transition: background-color .3s ease-in-out;
+}
+
+#container #posthold .white:hover {
+	background-color: rgba(240, 240, 250, 0.2);
+}
+
+#container #posthold .thumb h1 {
+	z-index: 3;
+	position: absolute;
+	text-shadow: 1px 1px 0px #f0f0f0;
+	bottom: 10px;
+	left: 10px;
+}
+
+#container #posthold .thumb img {
+	z-index: 1;
+}
+
+#container #posthold .content {
+	width: 500px;
+	margin: 10px 10px 0 10px;
+}
+
+#container #posthold #readmore {
+	width: 100px;
+	height: 30px;
+	margin: 10px 0 0 400px;
+	position: relative;
+	text-align: center;
+	line-height: 2.8em;
+	border-radius: 5px;
+	background-color: #16181a;
+	color: #f0f0f0;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+#container #posthold #info {
+	width: 510px;
+	padding: 5px;
+	border-top: dashed 1px #d1d1d1;
+	border-bottom: dashed 1px #d1d1d1;
+}
+
+#container #nextprev {
+	width: 540px;
+	height: 30px;
+	position: relative;
+}
+
+#container #nextprev .next {
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	line-height: 2.5em;
+	border-radius: 5px;
+	background-color: #16181a;
+	color: #f0f0f0;
+	font-size: 12px;
+	text-transform: uppercase;
+	position: absolute;
+	right: 165px;
+}
+
+#container #nextprev .prev {
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	line-height: 2.5em;
+	border-radius: 5px;
+	background-color: #16181a;
+	color: #f0f0f0;
+	font-size: 12px;
+	text-transform: uppercase;
+	position: absolute;
+	left: 165px;
+}
+
+/* ------------------------------------------------------------ Wordpress Core */
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
