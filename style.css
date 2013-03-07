@@ -1,3 +1,13 @@
+/*
+Theme Name: MilkVille
+Theme URI: http://milkville.co.uk
+Description: Theme for MilkVille created by Alex Fuller.
+Author: Alex Fuller
+Author URI: http://alexfuller.co.uk
+Version: 1.0
+Tags: milkville, alex fuller
+*/
+
 @font-face {
 	font-family: Pacifico;
 	src: url('pacifico.ttf');
@@ -8,6 +18,13 @@
 	padding: 0;
 }
 
+body {
+	background: url(images/bg.png) repeat fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #16181a;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: Pacifico;
 	font-size: 38px;
@@ -15,11 +32,21 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0;
 }
 
-body {
-	background: url(images/bg.png) repeat fixed;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
+p {
+	margin: 0;
+	padding: 0 0 15px 0;
+}
+
+a {
 	color: #16181a;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #16181a;
+	text-decoration: underline;
+	font-weight: bold;
 }
 
 #logo {
@@ -113,6 +140,13 @@ body {
 	text-transform: uppercase;
 }
 
+#container #posthold #info {
+	width: 510px;
+	padding: 5px;
+	border-top: dashed 1px #d1d1d1;
+	border-bottom: dashed 1px #d1d1d1;
+}
+
 #container #nextprev {
 	width: 540px;
 	height: 30px;
@@ -145,4 +179,87 @@ body {
 	text-transform: uppercase;
 	position: absolute;
 	left: 165px;
+}
+
+/* ------------------------------------------------------------ Wordpress Core */
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
 }
